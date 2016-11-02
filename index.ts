@@ -5,7 +5,7 @@ import * as turf from '@turf/helpers'
 
 const collection = turf.featureCollection([])
 const sources = [
-  { name: 'osmdata', mbtiles: path.join(__dirname, 'canada.mbtiles')},
+  { name: 'osmdata', mbtiles: path.join(__dirname, 'latest-planet.mbtiles')},
 ]
 const user = 'DenisCarriere'
 

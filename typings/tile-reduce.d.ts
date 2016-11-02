@@ -51,7 +51,7 @@ declare module "tile-reduce" {
     }
 
     interface endEvent {
-        (): void;
+        (error: any): void;
     }
 
     interface Events {
@@ -108,7 +108,7 @@ declare module "tile-reduce" {
          *     console.log(`Total count was: ${ count }`)
          * })
          */
-        on(type: 'end', callback: startEvent): Events;
+        on(type: 'end', callback: endEvent): Events;
     }
 
     /**

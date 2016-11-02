@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/DenisCarriere/osm-gazatteer#readme",
   "devDependencies": {
+    "@types/node": "^6.0.46",
+    "@types/turf": "^3.5.32",
     "ava": "^0.16.0",
     "coveralls": "^2.11.14",
     "documentation": "^4.0.0-beta11",
@@ -53,5 +55,7 @@
     "failFast": true,
     "tap": true
   },
-  "dependencies": {}
+  "dependencies": {
+    "tile-reduce": "^3.1.1"
+  }
 }

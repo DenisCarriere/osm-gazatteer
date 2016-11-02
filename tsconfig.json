@@ -13,6 +13,7 @@
         "node_modules"
     ],
     "filesGlob": [
+        "typings/tile-reduce.d.ts",
         "./**/*.ts"
     ]
 }

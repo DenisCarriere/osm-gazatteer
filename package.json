@@ -1,0 +1,57 @@
+{
+  "name": "osm-gazatteer",
+  "version": "0.1.0",
+  "description": "OSM Gazetteer builds a large GeoJSON from OSM QA Tiles.",
+  "main": "index.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "test": "npm run lint && nyc ava",
+    "docs": "tsc && cat HEADER.md > README.md && documentation build index.js -c documentation.yml -f md >> README.md && cat CHANGELOG.md >> README.md",
+    "lint": "tsc && tslint index.ts test.ts && documentation lint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisCarriere/osm-gazatteer.git"
+  },
+  "author": "Denis Carriere <carriere.denis@gmail.com>",
+  "contributors": [
+    "Denis Carriere <carriere.denis@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DenisCarriere/osm-gazatteer/issues"
+  },
+  "homepage": "https://github.com/DenisCarriere/osm-gazatteer#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "coveralls": "^2.11.14",
+    "documentation": "^4.0.0-beta11",
+    "geojsonhint": "^2.0.0-beta2",
+    "nyc": "^8.3.2",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.6"
+  },
+  "keywords": [
+    "gis",
+    "geo",
+    "geojs",
+    "geospatial",
+    "geography",
+    "map",
+    "osm",
+    "qa",
+    "geojson",
+    "gazatteer",
+    "places",
+    "location"
+  ],
+  "ava": {
+    "files": [
+      "test.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true
+  },
+  "dependencies": {}
+}

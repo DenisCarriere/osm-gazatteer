@@ -1,0 +1,2 @@
+# osm-gazatteer
+OpenStreetMap Gazetteer
